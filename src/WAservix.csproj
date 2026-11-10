@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Tekservix.WAservix</RootNamespace>
+    <AssemblyName>WAservix</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>WAservix</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Tekservix</Authors>
+    <Company>Tekservix</Company>
+    <Product>WAservix WhatsApp API Gateway</Product>
+    <Title>WAservix WhatsApp API Gateway client</Title>
+    <Description>Official .NET client for the WAservix WhatsApp API Gateway: send WhatsApp messages, images and documents from your own number, with status tracking and webhooks.</Description>
+    <PackageTags>whatsapp;whatsapp-api;whatsapp-gateway;whatsapp-bot;send-whatsapp;messaging;webhook;wasender;waservix;tekservix</PackageTags>
+    <PackageProjectUrl>https://tekservix.com/waservix/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TekservixHQ/waservix-csharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Copyright>Copyright (c) 2026 Tekservix</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>
