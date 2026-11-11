@@ -2,6 +2,8 @@
 
 [![NuGet](https://img.shields.io/nuget/v/WAservix.svg)](https://www.nuget.org/packages/WAservix)
 
+**WAservix WhatsApp API Gateway** - official C#/.NET client: send WhatsApp messages from your own number. By Tekservix.
+
 C# / .NET client for the [WAservix WhatsApp API Gateway](https://tekservix.com/waservix/).
 
 WAservix links your own WhatsApp number by QR code (the same way WhatsApp Web does) and gives you a REST API to send text, images, video, audio, documents, locations, polls and more, with webhooks for incoming messages and status updates.
