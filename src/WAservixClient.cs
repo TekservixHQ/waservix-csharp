@@ -39,7 +39,7 @@ namespace Tekservix.WAservix
     /// </example>
     public class WAservixClient
     {
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
         public const string DefaultBaseUrl = "https://tekservix.com/waservix/api";
 
         private static readonly HttpClient SharedHttp = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
